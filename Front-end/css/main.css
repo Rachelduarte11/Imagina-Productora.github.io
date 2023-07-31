@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+body{
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*BARRA*/
+header{
+    transition: 0.5s ease;
+}
+.navigation-items a {
+    position: relative; /* Necesario para posicionar la línea */
+    text-decoration: none; /* Quitamos la decoración subrayada del enlace */
+  }
+.navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #7c025c;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    
+    transform-origin: left;
+    transition: 0.3s ease;
+}
+.navigation-items a:hover:before{
+    width: 100%;
+  }
+
+.barra-main {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+  }
+  
+  
+  .logo {
+    width: 15rem;
+    height: auto;
+  }
+  
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Permite que los navigation-items ocupen el espacio disponible */
+  }
+  
+  .navigation-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15%;
+  }
+  
+  .navigation-items a {
+    margin: 0 30px;
+    color: #323131;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .navigation-items a:hover {
+    color: #7c025c;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-media a {
+    color: #323232;
+    font-size: 1.3em;
+    margin: 0 20px;
+    justify-content: center;
+  }
+
+  
+  .social-media-hidden {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-media-hidden a {
+    margin: 0 10px; /* Ajusta el espaciado entre los íconos */
+  }
+  
+
+  .menu-hidden {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999; /* Asegura que el menú aparezca por encima del contenido */
+  }
+  .menu-active .icon-x {
+    display: block;
+  }
+  /* Estilos para el contenedor del menú */
+  .container-menu {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .x-icon-container{
+    align-items: center;
+    display: flex;
+  }
+  
+  /* Estilos para el icono del menú */
+  .icon-container {
+
+    display: flex;
+    box-shadow: 0 2px 4px #737373;
+    padding: 10px 20px;
+
+  }
+  
+  /* Estilos para la lista de menú */
+  .menu-list-ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  
+  
+
+  .sub-menu-acordeon {
+    display: none;
+    padding-left: 20px;
+  }
+  .sub-menu-acordeon.show-sub-menu {
+    display: block; /* Mostrar el sub-menú cuando tiene la clase show-sub-menu */
+  }
+  
+
+/*Banner principal*/
+    
+.banner {
+  position: relative;
+  width: 100%;
+  height: 800px; /* La imagen ocupará toda la altura de la pantalla */
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-container img.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  margin-top: 0; 
+}
+
+/*Servicios*/
+.services-container {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  position: relative;
+  color: #3F3C3C;
+  font-family: Inika;
+  
+}
+.services-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.services-title .circle1 {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #21211f;
+  border-radius: 50%;
+  margin: 0 4px;
+  text-align: center;
+}
+.services-title .circle2 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #21211f;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+/*carrusel*/
+
+.services-images {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.container1,
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px;
+  width: 100%; /* Tamaño de 4 imágenes en dos filas */
+  justify-content: center; /* Centrar las imágenes */
+}
+.container2 {
+  display: none; /* Ocultar el contenedor2 por defecto */
+} 
+
+.container1 img,
+.container2 img {
+  width: calc(50% - 20px); /* Espacio entre las imágenes, ajustar según tus preferencias */
+  margin: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.item-carousel {
+  display: none;
+}
+
+.circle.active {
+  background-color: purple;
+}
+.services-section{
+  display: none;
+}
+/*Triunfos*/
+.triunfos {
+  display: flex;
+    justify-content: space-between;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  margin: 0 8%;
+}
+
+.box {
+  width: 200px;
+  text-align: center;
+  padding: 0px;
+  
+}
+
+.box img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+ 
+}
+.box h1{
+  font-size: 2.5rem;
+  color: #7c025c;
+}
+
+.counter {
+  color: #4E474C;
+  font-family: Inika;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0.5rem;
+}
+ 
+h6 {
+  color: #4E474C;
+text-align: center;
+font-family: Inria Serif;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.container-triunfos{
+  background-color: #e4e4e4;
+  max-height: 400px;
+}
+/*COtizacion*/
+.box-cotizar img {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+}
+
+/* Estilos adicionales del botón */
+.box-cotizar {
+  position: relative;
+}
+.box-cotizar img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  opacity: 0.8; /* Ajustar la opacidad según sea necesario */
+  z-index: 1; /* Asegurarse de que la imagen 2 esté sobre la imagen 1 */
+}
+
+
+.cotiza-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12.5rem;
+  background: radial-gradient(37.61% 37.61% at 50.00% 50.00%, rgba(74, 4, 50, 0.67) 0%, rgba(108, 18, 78, 0.90) 100%);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  width: 30.25rem;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2;
+}
+.cotiza-btn:hover {
+  background-color: rgb(131, 6, 90); /* Cambia el color de fondo al hacer hover */
+  transform: translate(-50%, -65%); /* Eleva ligeramente el botón al hacer hover */
+  text-shadow: 0px 0px 6px rgba(241, 72, 205, 0.7); /* Agrega una sombra de texto con color claro */
+  transition: transform .2s ease-in-out;
+}
+.cotiza-btn h5 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+/*GALERIA*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 700;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.gallery {
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.img-galeria:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen {
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 25px;
+}
+/*HISTORIA DE EXITO*/
+/*Servicios*/
+.history-container {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.history-title {
+  font-size: 2.5rem;
+  position: relative;
+  color: #3F3C3C;
+  font-family: Inika;
+  
+}
+.history-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.history-title .circle1 {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #21211f;
+  border-radius: 50%;
+  margin: 0 4px;
+  text-align: center;
+}
+.history-title .circle2 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #21211f;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+
+
+/*Responsive*/
+@media screen and (max-width: 1465px) {
+    .barra-main {
+      flex-wrap: wrap;
+      font-size: 1.2rem;
+    }
+  
+    .logo {
+      width: 12rem;
+      height:auto ;
+      
+    }
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 1000px; /* La imagen ocupará toda la altura de la pantalla */
+      overflow: hidden;
+    }
+    
+  
+    .navigation {
+      flex-basis: 100%;
+    }
+  
+    .social-media {
+      margin-left: auto;
+    }
+    .social-media a {
+        color: #323232;
+        font-size: 1em;
+        margin-left: 15px;
+      }
+    .navigation-items {
+      flex-basis: 100%;
+      justify-content: space-around;
+      margin:0 8%;
+    }
+  
+    .navigation-items a {
+      margin: 0;
+    }
+  }
+
+  /* Estilos para el botón hamburguesa */
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .linea {
+    width: 20px;
+    height: 3px;
+    background-color: #4a4a4a;
+    margin: 2px;
+    border-radius: 2px;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .barra-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+      }
+    
+      .banner {
+        position: relative;
+        width: 100%;
+        height: 600px; /* La imagen ocupará toda la altura de la pantalla */
+        overflow: hidden;
+      }
+      
+      .navigation {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+    
+      .logo {
+        width: 12rem;
+        margin: 0 auto; /* Centramos el logo en el eje horizontal */
+      }
+      .social-media  {
+        color: #323232;
+        font-size: 1.2em;
+        margin-left: 0;
+      }
+      .hamburguesa {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+      }
+
+      .navigation-items {
+        display: none; 
+      }
+      .services-section{
+        display: none;
+      }
+      /*TRIUNFOS*/
+      .triunfos {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0rem; 
+        margin: 0 8%;
+    }
+    .box {
+      width: 200px;
+      text-align: center;
+      padding: 0px;
+      
+    }
+    
+    .box img {
+      width: 80px;
+      height: 78px;
+      object-fit: cover;
+     
+    }
+    .box h1{
+      font-size: 2rem;
+      color: #7c025c;
+    }
+    h6 {
+      font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .services-container{
+      display: none;
+    }
+    .services-section{
+      display: block;
+    }
+    .triunfos {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0rem;
+      margin: 0 4%;}
+  }
+  /* Estilos para la navegación en tamaños de pantalla más pequeños */
+  @media (max-width: 600px) {
+   
+    .social-media{
+        display: none;
+    }
+  
+    .barra-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    
+      .navigation {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+    
+      .logo {
+        width: 9rem;
+        margin: 0 auto; /* Centramos el logo en el eje horizontal */
+      }
+    
+      .hamburguesa {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        /* Puedes ajustar el tamaño de la hamburguesa */
+      }
+      
+      .show-menu {
+        display: block;
+        width: 70%;
+        box-shadow: 0 4px 4px #737373;
+      }
+      
+
+      .navigation-items {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        visibility: hidden;
+        z-index: 1;
+        transition: visibility 0s, opacity 0.5s;
+      }
+      .x-icon{
+        font-size:3em ;
+        color: #000;
+      }
+      .triunfos {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0rem;
+        margin: 0 2%;
+      }
+      .box {
+        width: 120px;
+        text-align: center;
+        padding: 0px;
+    }
+      .box img {
+        width: 60px;
+        height: 58px;
+        object-fit: cover;}
+
+        .box h1 {
+          font-size: 1.8rem;}
+
+      h6{
+        font-size: 1.2rem;
+      }    
+      /*BANNER*/
+     
+        .banner video {
+          display: block;
+          margin-top: 0;
+        }
+      
+        .banner img {
+          display: none;
+        }
+        
+
+  }
+
+
+  @media (min-width: 1465px) {
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 700px; /* La imagen ocupará toda la altura de la pantalla */
+      overflow: hidden;
+    }
+    .image-container {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1000px;
+    }
+    
+  }
+  
+     
