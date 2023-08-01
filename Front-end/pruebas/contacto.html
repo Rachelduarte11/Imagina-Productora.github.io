@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu página web</title>
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css">
+</head>
+<body>
+  <label for="country">Selecciona tu país:</label>
+  <div class="select-country">
+    <div class="selected-country">
+      <span class="flag-icon flag-icon-us"></span>
+      <span>Estados Unidos (+1)</span>
+    </div>
+    <ul class="country-list">
+      <li data-country="US">
+        <span class="flag-icon flag-icon-us"></span>
+        <span>Estados Unidos (+1)</span>
+      </li>
+      <li data-country="CA">
+        <span class="flag-icon flag-icon-ca"></span>
+        <span>Canadá (+1)</span>
+      </li>
+      <li data-country="GB">
+        <span class="flag-icon flag-icon-gb"></span>
+        <span>Reino Unido (+44)</span>
+      </li>
+      <!-- Agrega más opciones para otros países si lo deseas -->
+    </ul>
+  </div>
+
+  <button id="submitBtn">Enviar</button>
+
+  <!-- Contenido de tu página web -->
+  <script src="ruta/a/libphonenumber-js.js"></script>
+  <script type="module" src="../js/phone.js"></script>
+</body>
+</html>

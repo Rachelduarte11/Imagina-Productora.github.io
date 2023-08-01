@@ -6,6 +6,7 @@
     <title>Imagina Productora</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/loggin.css">
     <link rel="icon" href="./Images/logo-Imagina-mascara.png" type="image/x-icon">
    <link rel="stylesheet" href="./Images/iconos/x-solid.svg">
     <!-- Incluye jQuery -->
@@ -123,46 +124,46 @@
         </div>
     </div>
     <section class="services-section">
-      <h2 class="line-title">trending games</h2>
+      <h2 class="line-title">Nuestros Servicios</h2>
       <div class="owl-carousel custom-carousel owl-theme">
-        <div class="item active" style="background-image: url(https://ucarecdn.com/75d7700d-c102-40ff-9ba1-f0641444c616/dota2.jpg);">
+        <div class="item" style="background-image: url(./Images/pruebas/1.png);">
           <div class="item-desc">
-            <h3>Dota 2</h3>
+            <h3>Show de Cena</h3>
             <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
               Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
           </div>
         </div>
-        <div class="item" style="background-image: url(https://ucarecdn.com/2a5f69bc-befa-49f4-acc6-ab1dcae514c7/winter3.jpg);">
+        <div class="item" style="background-image: url(./Images/pruebas/2.png);">
           <div class="item-desc">
-            <h3>The Witcher 3</h3>
+            <h3>Coreografia de novios</h3>
             <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
               of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
           </div>
         </div>
-        <div class="item" style="background-image: url(https://ucarecdn.com/ec1918b1-2674-452c-bf61-8f73d8cc40c6/rdr2.jpg);">
+        <div class="item" style="background-image: url(./Images/pruebas/3.png);">
           <div class="item-desc">
-            <h3>RDR 2</h3>
+            <h3>Coreografia grupal</h3>
             <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
               Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
           </div>
         </div>
-        <div class="item" style="background-image: url(https://ucarecdn.com/6ba9052d-6105-4491-917b-e1a65b68f920/pubg.jpg);">
+        <div class="item" style="background-image: url(./Images/pruebas/8.png);">
           <div class="item-desc">
-            <h3>PUBG Mobile</h3>
+            <h3>Guarderia para niños</h3>
             <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
               Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
           </div>
         </div>
-        <div class="item" style="background-image: url(https://ucarecdn.com/77598be3-c67f-40de-83d3-71a0f2f76c56/fortnite.jpg);">
+        <div class="item" style="background-image: url(./Images/pruebas/5.png);">
           <div class="item-desc">
-            <h3>Fortnite</h3>
+            <h3>Hora Loca</h3>
             <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
               for Blizzard Entertainment's Warcraft III.</p>
           </div>
         </div>
-        <div class="item" style="background-image: url(https://ucarecdn.com/ed548880-32e4-42af-9d4e-632623903256/farcry5.jpg);">
+        <div class="item" style="background-image: url(./Images/pruebas/6.png);">
           <div class="item-desc">
-            <h3>Far Cry 5</h3>
+            <h3>Clases Individuales</h3>
             <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
               which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
           </div>
@@ -210,14 +211,54 @@
   <h2 class="history-title">
       <span class="circle1"></span>
       <span class="circle2"></span>
-      Nuestros Servicios
+      Nuestra Historia de exito
       <span class="circle2"></span>
       <span class="circle1"></span>
-  </h2>
-    <!--
+        <div class="history-images">
+          <div class="box-history">
+            <img src="./Images/historia-exito.png" width= "auto" height>
+            <div class="box-history-text">
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </h5>
+              <p><strong>Carlos Paz y Alexandra Calderón, Gerentes Generales</strong></p>
+            </div>
+      
+        </div>
+  </div>
+  <div class="container-contact">
+  <div class = 'mainloggin'>
+    <div class = 'leftSide'>
+      
+  <!--     <div><button> Home </button></div> -->
+      
+    </div>
+  
+    <div class = 'rightSide'>
+  
+      <div id = 'errorMessage'>
+        <p> That Username or Password is incorrect</p>
+      </div>
+  
+      <form id="register" action="#" class="inputGroup">
+        <input type="text" class="inputField" placeholder="User id" required>
+
+        <input type="email" class="inputField" placeholder="enter your email" required>
+        <input type="password" class="inputField" placeholder="Enter password" required>
+        <input type="checkbox" class="chackbox"  required> <span>Estoy de acuerdo en mandar mis datos de contacto a Imagina Productora</span>
+        <button type="submit" class="submitbtn"> 
+            registrarme
+        </button>
+    </form>
+    </div>
+  </div>
+  </div>
     <section class="gallery" id="portafolio">
         <div class="contenedor">
-          <h2 class="subtitulo">Galería</h2>
+          <h2 class="subtitulo">Galería: Nuestros Eventos</h2>
           <div class="contenedor-galeria">
             <img src="./Images/pruebas/1.png" alt="" class="img-galeria">
             <img src="./Images/pruebas/9.jpeg" alt="" class="img-galeria">
@@ -230,15 +271,46 @@
             <img src="./Images/pruebas/8.png" alt="" class="img-galeria">
           </div>
         </div>
-      </section>-->
+      </section>
       
       <section class="imagen-light">
         <i class="fas fa-times close"></i>
         <img src="./img/img-3.jpg" alt="" class="agregar-imagen">
       </section>
-      
+
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box-us">
+                <figure>
+                    <a href="#inicio" >
+                        <img src="./Images/logo-Imagina.png" class="loguito" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box-us">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Matarani 167, San Miguel, Lima - Perú</p>
+                <p>(+51) 985638683 | 963554045</p>
+                <p>informes@evaristocatering.pe</p>
+            </div>
+            <div class="box-us">
+                <h2>SIGUENOS</h2>
+                <div class="social-media">
+                  <a href="#"><i class="fab fa-facebook-f"><img src="./Images/iconos/tiktok.svg"></i></a>
+                  <a href="#"><i class="fab fa-instagram"><img src="./Images/iconos/facebook.svg"></i></a>
+                  <a href="#"><i class="fab fa-tiktok"><img src="./Images/iconos/instagram.svg"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>IMAGINA</b> - Todos los Derechos Reservados.</small>
+        </div>
+          
+      </footer>
 </body>
 <script src="./js/galeria.js"></script>
 <script src="./js/carrusel.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/contacto.js"></script>
+<script src="./js/phone.js"></script>
 </html>

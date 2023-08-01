@@ -10,7 +10,7 @@
   padding: 0px;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family:Arapey;
   font-size: 16px;
 }
 .clear {
@@ -43,8 +43,8 @@ a:hover {
 }
 h2 {
   margin-bottom: 48px;
-  padding-bottom: 16px;
-  font-size: 20px;
+  
+  font-size: 2.5REM;
   line-height: 28px;
   font-weight: 700;
   position: relative;
@@ -63,25 +63,15 @@ button {
 /* -------- title style ------- */
 .line-title {
   position: relative;
-  width: 400px;
-}
-.line-title::before,
-.line-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  border-radius: 2px;
-}
-.line-title::before {
   width: 100%;
-  background: #f2f2f2;
+  margin-bottom: 10px;
+  color: #343434;
+  font-family: Arapey;
+  text-align: center;
+  justify-content: center;
 }
-.line-title::after {
-  width: 32px;
-  background: #e73700;
-}
+
+
 
 /******* Middle section CSS Start ******/
 /* -------- Landing page ------- */
@@ -156,10 +146,6 @@ button {
   position: relative;
   z-index: 5;
 }
-/******** Middle section CSS End *******/
-
-/***** responsive css Start ******/
-
 
 
 @media (max-width: 767px) {
@@ -167,7 +153,7 @@ button {
     font-size: 14px;
   }
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   h3 {
     margin: 0 0 8px;
@@ -175,12 +161,15 @@ button {
     line-height: 24px;
   }
   .line-title {
-    width: 250px;
+    width: 100%;
+   justify-content: center;
+   margin-top: 10px!important; 
   }
+ 
 
   /* -------- Landing page ------- */
   .services-section {
-    padding: 30px 15px 20px;
+    padding: 20px 15px 0px;
   }
   .services-section .item {
     margin: 0 10px 40px;
@@ -194,7 +183,22 @@ button {
   }
   .services-section .item-desc {
     padding: 0 14px 5px;
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
+    
   }
+}
+@media (max-width: 500px) {
+  .services-section {
+    padding: 15px 0px 0px;}
+
+    .services-section .item {
+      margin: 0 10px 40px;
+      width: 180px;
+      height: 250px;
+  }
+  .services-section .item.active {
+    width: 200px;}
+    
+  h2 {
+      font-size:2.2rem ;
+    }
 }

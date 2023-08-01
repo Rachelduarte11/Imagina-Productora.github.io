@@ -1,0 +1,44 @@
+/* Estilos para el campo de selección de países */
+.select-country {
+    position: relative;
+  }
+  
+  .selected-country {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .country-list {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+  }
+  
+  .country-list li {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .country-list li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para los iconos de banderas */
+  .flag-icon {
+    width: 24px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  
