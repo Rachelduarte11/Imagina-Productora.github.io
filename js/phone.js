@@ -1,4 +1,4 @@
-import { PhoneNumberUtil, PhoneNumberFormat } from 'libphonenumber-js';
+/*import { PhoneNumberUtil, PhoneNumberFormat } from 'libphonenumber-js';
 
 const phoneNumberUtil = PhoneNumberUtil.getInstance();
 
@@ -23,3 +23,4 @@ submitBtn.addEventListener('click', () => {
     console.error('Error al parsear el número de teléfono:', error);
   }
 });
+*/

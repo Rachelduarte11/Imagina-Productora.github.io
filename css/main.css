@@ -422,7 +422,11 @@ line-height: normal;
   color: #3F3C3C;
   font-family: Inika;
 }
-
+h1 {
+  font-family: sans-serif;
+  color: #fdfdfd;
+  text-align: center;
+}
 .history-title .circle1 {
   display: inline-block;
   width: 7px;
@@ -459,6 +463,9 @@ line-height: normal;
  padding-left: 20px;
  margin: 4% 7%;
 }
+.box-history-text p{
+  color: #323131;
+}
 .box-history h5 {
   color: #000;
   font-family: Arapey;
@@ -479,13 +486,67 @@ line-height: normal;
   background: #EAEAEA;
   margin: 4% 7%;
 }
+h1 {
+  margin-bottom: 20px;
+}
+.bxslider li {
+  position: relative;
+}
+.bxslider li .item {
+  text-align: center; 
+  color: #21211f;
+}
+.bxslider li img {
+  display: block;
+width: 180px; /* Ajusta el tamaño de la imagen según tus necesidades */
+height: 180px; /* Ajusta el tamaño de la imagen según tus necesidades */
+object-fit: cover;
+border-radius: 50%;
+margin: 10px auto 10px; 
+}
+.bxslider li h5, .bxslider li p {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0 0 0;
+  margin-top: 10px;
+  text-align: center; 
+  width: 50%;
+  margin: 0 auto;
+  font-family: Aksara Bali Galang;
+  
+}
+.bxslider li h5{
+  font-size: 2rem;
+}
+#bx-pager {
+  margin: 10px auto 20px;
+  text-align-last: center;
+}
+#bx-pager a {
+  display: inline-block;
+  
+  border-radius: 50%;
+  overflow: hidden;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(189, 189, 189); /* Cambia el color aquí (por ejemplo, #F00 es rojo) */
+}
+.bx-viewport {
+  height: auto!important;
+}
+
+#bx-pager a.active {
+  background-color:purple; /* Cambia el color aquí para cuando esté activo (por ejemplo, #00F es azul) */
+}
+.bx-wrapper{
+-webkit-box-shadow: none!important;
+box-shadow: none!important;
+border: none!important;
+background: #fff;
+margin-bottom: 20px!important;
+padding: 20px!important;
+}
 /*GALERIA*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 

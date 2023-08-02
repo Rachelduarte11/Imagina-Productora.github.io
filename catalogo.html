@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/catalogo.css">
+    <link rel="icon" href="./Images/logo-Imagina-mascara.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Imagina Productora-Catalogo</title>
+</head>
+<body>
+    <header>
+        <!--inicio navbar-->
+        <div class="barra-main">
+          
+                <div class="navigation" onclick="toggleMenu()">
+                  
+                    <div class="hamburguesa">
+                        <div class="linea"></div>
+                        <div class="linea"></div>
+                        <div class="linea"></div>
+                      </div>
+                    <img src="./Images/-tittle-imagina.png" class="logo"></img>
+                <div class="navigation-items" id="navigationItems">
+                    <a href="index.html" onclick="seleccionar()">Inicio</a>
+                    <a href="#acerca" onclick="seleccionar()">Servicios</a>
+                    <a href="#grid" onclick="seleccionar()">Catalogo</a>
+                    <a href="#galeria" onclick="seleccionar()">Quiénes Somos</a>
+                    <a href="" onclick="seleccionar()">Contacto</a>
+                </div>
+
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"><img src="./Images/iconos/tiktok.svg"></i></a>
+                    <a href="#"><i class="fab fa-instagram"><img src="./Images/iconos/facebook.svg"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"><img src="./Images/iconos/instagram.svg"></i></a>
+                </div>
+
+                <div class="menu-hidden">
+                  <div class="container-menu">
+                    <div class="icon-container">
+                      <div class="x-icon-container">
+                        <img class="x-icon" src="./Images/iconos/x-solid.svg"  alt="icono de equis"></div>
+                      
+                      <img src="./Images/-tittle-imagina.png" class="logo"></img>
+                    </div>
+                    <div class="list-container">
+                      <nav class="menu-list-nav">
+                        <ul class="menu-list-ul">
+                          <li class="menu-item"><a href="index.html" onclick="seleccionar()">Inicio</a></li>
+                          <li class="menu-item"><a href="#acerca" onclick="">Servicios</a></li>
+                          
+                          <li class="menu-item"><a href="#galeria" onclick="">Quiénes Somos</a></li>
+                          <li class="menu-item"><a href="" onclick="seleccionar()">Contacto</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="social-media-hidden">
+                      <a href="#"><img src="./Images/iconos/tiktok.svg"></a>
+                      <a href="#"><img src="./Images/iconos/facebook.svg"></a>
+                      <a href="#"><img src="./Images/iconos/instagram.svg"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin del menu -->
+            </div>
+        </div>
+    </header>
+    
+    <div class="banner" id="banner">
+        <div class="image-container">
+        <img src="./Images/show-especial.png" alt="Banner Principal">
+        
+      </div>
+        <video autoplay muted loop>
+          <source src="./Videos/main-video.mp4" type="video/mp4">
+          Tu navegador no admite el elemento de video.
+        </video>
+      </div>
+      <div class="buttons-container">
+        <button class="btn-show-especiales">Shows Especiales</button>
+        <button class="btn-show-clasicos">Shows Clásicos</button>
+      </div>
+  
+    <div class="cards" id="cards">
+<!--
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?mountain" alt="mountain" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?field" alt="field" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?water" alt="water" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?river" alt="river" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?kite" alt="kite" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?underwater" alt="underwater" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="https://source.unsplash.com/300x225/?desert" alt="desert" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+                Card title
+                <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>-->
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box-us">
+                <figure>
+                    <a href="#inicio" >
+                        <img src="./Images/logo-Imagina.png" class="loguito" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box-us">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Matarani 167, San Miguel, Lima - Perú</p>
+                <p>(+51) 985638683 | 963554045</p>
+                <p>informes@evaristocatering.pe</p>
+            </div>
+            <div class="box-us">
+                <h2>SIGUENOS</h2>
+                <div class="social-media">
+                  <a href="#"><i class="fab fa-facebook-f"><img src="./Images/iconos/tiktok.svg"></i></a>
+                  <a href="#"><i class="fab fa-instagram"><img src="./Images/iconos/facebook.svg"></i></a>
+                  <a href="#"><i class="fab fa-tiktok"><img src="./Images/iconos/instagram.svg"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>IMAGINA</b> - Todos los Derechos Reservados.</small>
+        </div>
+          
+      </footer>
+      
+</body>
+<script src="./js/catalogo.js"></script>
+<script src="./js/main.js"></script>
+</html>

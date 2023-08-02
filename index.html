@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carrusel.css">
     <link rel="stylesheet" href="css/loggin.css">
+    <link rel="stylesheet" href="css/testimonio.css">
     <link rel="icon" href="./Images/logo-Imagina-mascara.png" type="image/x-icon">
    <link rel="stylesheet" href="./Images/iconos/x-solid.svg">
     <!-- Incluye jQuery -->
@@ -35,7 +36,7 @@
                 <div class="navigation-items" id="navigationItems">
                     <a href="#inicio" onclick="seleccionar()">Inicio</a>
                     <a href="#acerca" onclick="seleccionar()">Servicios</a>
-                    <a href="#grid" onclick="seleccionar()">Catalogo</a>
+                    <a href="catalogo.html" onclick="seleccionar()">Catalogo</a>
                     <a href="#galeria" onclick="seleccionar()">Quiénes Somos</a>
                     <a href="" onclick="seleccionar()">Contacto</a>
                 </div>
@@ -49,20 +50,20 @@
                 <div class="menu-hidden">
                   <div class="container-menu">
                     <div class="icon-container">
-                      <div class="x-icon-container"><img class="x-icon" src="./Images/iconos/x-solid.svg"  alt="icono de equis"></div>
-                      
-                      <img src="./Images/-tittle-imagina.png" class="logo"></img>
+                      <div class="x-icon-container">
+                        <img class="x-icon" src="./Images/iconos/x-solid.svg"  alt="icono de equis"></div>
+                        <img src="./Images/-tittle-imagina.png" class="logo"></img>
                     </div>
                     <div class="list-container">
                       <nav class="menu-list-nav">
                         <ul class="menu-list-ul">
                           <li class="menu-item"><a href="#acerca" onclick="seleccionar()">Servicios</a></li>
-                          <li class="menu-item"><a href="#grid" onclick="toggleSubMenu()">Catalogo</a>
+                          <li class="menu-item"><a href="catalogo.html" onclick="toggle">Catalogo</a>
                             <div class="submenu" id="catalogoSubmenu">
                               <section class="sub-menu-acordeon">
                                 <ul class="menu-list-ul">
                                   <li class="menu-item"><a href="#grid" onclick="seleccionar()">Shows Clásicos</a></li>
-                                  <li class="menu-item"><a href="#grid" onclick="seleccionar()">Shows Especiales</a></li>
+                                  <li class="menu-item" ><a href="catalogo.html">Shows Especiales</a></li>
                                 </ul>
                               </section>
                             </div>
@@ -95,7 +96,7 @@
         Tu navegador no admite el elemento de video.
       </video>
     </div>
-    
+   
     <div class="services-container">
       <h2 class="services-title">
           <span class="circle1"></span>
@@ -214,7 +215,7 @@
       <span class="circle2"></span>
       Nuestra Historia de exito
       <span class="circle2"></span>
-      <span class="circle1"></span>
+      <span class="circle1"></span></h2>
         <div class="history-images">
           <div class="box-history">
             <img src="./Images/historia-exito.png" width= "auto" height>
@@ -230,6 +231,69 @@
       
         </div>
   </div>
+</div>
+  <h1 class="history-title">Nuestros Testimonios</h1>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<section class="testimonios">
+  <div class="container">
+    <ul class="bxslider">
+      <li>
+        <div class="item">
+          <img src="./Images/mafia-in-the-morning-bl-1.png" alt="">
+          <h5>Marina Lynn</h5>
+          <p>“Me encanto el evento de las danzas que hicieron para mi boda”</p>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <img src="./Images/pruebas/2.png"  alt="">
+          <h5>TÍTULO TESTIMONIO 6</h5>
+          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <img src="./Images/pruebas/2.png"  alt="">
+          <h5>TÍTULO TESTIMONIO 6</h5>
+          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <img src="./Images/pruebas/2.png"  alt="">
+          <h5>TÍTULO TESTIMONIO 6</h5>
+          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <img src="./Images/pruebas/2.png"  alt="">
+          <h5>TÍTULO TESTIMONIO 6</h5>
+          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <img src="./Images/pruebas/2.png" class="testimonio" alt="">
+          <h5>TÍTULO TESTIMONIO 6</h5>
+          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div id="bx-pager">
+     
+      <a data-slide-index="0" href=""></a>
+      <a data-slide-index="1" href=""></a>
+      <a data-slide-index="2" href=""></a>
+      <a data-slide-index="3" href=""></a>
+      <a data-slide-index="4" href=""></a>
+      <a data-slide-index="5" href=""></a>
+    </div>
+  </div>
+</section>
   <div class="container-contact">
   <div class = 'mainloggin'>
     <div class = 'leftSide'>
@@ -308,10 +372,16 @@
         </div>
           
       </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </body>
-<script src="./js/galeria.js"></script>
+
 <script src="./js/carrusel.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/contacto.js"></script>
+<script src="./js/galeria.js"></script>
 <script src="./js/phone.js"></script>
 </html>

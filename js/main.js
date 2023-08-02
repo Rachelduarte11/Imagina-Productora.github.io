@@ -101,7 +101,6 @@ counters.forEach(counter => counterObserver.observe(counter));
 
 
 
-
 function toggleMenu() {
   const menu = document.querySelector('.menu-hidden');
   menu.classList.toggle('show-menu');
@@ -110,13 +109,11 @@ function toggleMenu() {
 
 const menu = document.querySelector('.menu-hidden');
 menu.addEventListener('click', (event) => {
-  // Evitar que se produzcan acciones predeterminadas (por ejemplo, seguir el enlace de un <a>)
-  event.preventDefault();
+   event.preventDefault();
 });
 
 const xIcon = document.querySelector('.x-icon');
 xIcon.addEventListener('click', (event) => {
-  // Evitar que el evento se propague al contenedor padre (x-icon-container)
   event.stopPropagation();
   // Cerrar el menú
   const menu = document.querySelector('.menu-hidden');
@@ -126,4 +123,12 @@ xIcon.addEventListener('click', (event) => {
 function toggleSubMenu() {
   const subMenu = document.querySelector('.sub-menu-acordeon');
   subMenu.classList.toggle('show-sub-menu');
+  window.location.href = "catalogo.html"
 }
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+   });
+   $('.testimonios .bxslider').bxSlider({
+     pagerCustom: '#bx-pager'
+   });

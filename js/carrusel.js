@@ -40,15 +40,15 @@ $(document).ready(function () {
 
   // Función para mover el carrusel automáticamente
   function moveCarousel() {
-    $(".custom-carousel").trigger("next.owl.carousel");
+    jQuery(".custom-carousel").trigger("next.owl.carousel");
   }
 })
   // Inicializar el carrusel con Owl Carousel
-  $(document).ready(function () {
+  jQuery(document).ready(function () {
     let isCarouselPlaying = true;
 
     // Inicializar el carrusel con Owl Carousel
-    const carousel = $(".custom-carousel").owlCarousel({
+    const carousel = jQuery(".custom-carousel").owlCarousel({
       autoWidth: true,
       loop: true,
       autoplay: true,
@@ -59,7 +59,7 @@ $(document).ready(function () {
 
   
     // Detener o reanudar el carrusel cuando se hace clic en un elemento
-    $(".custom-carousel .item").click(function () {
+    jQuery(".custom-carousel .item").click(function () {
       if (isCarouselPlaying) {
         carousel.trigger('stop.owl.autoplay');
       } else {
