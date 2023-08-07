@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/testimonio.css">
     <link rel="icon" href="./Images/logo-Imagina-mascara.png" type="image/x-icon">
    <link rel="stylesheet" href="./Images/iconos/x-solid.svg">
+   
     <!-- Incluye jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -55,22 +56,13 @@
                         <img src="./Images/-tittle-imagina.png" class="logo"></img>
                     </div>
                     <div class="list-container">
-                      <nav class="menu-list-nav">
-                        <ul class="menu-list-ul">
-                          <li class="menu-item"><a href="#acerca" onclick="seleccionar()">Servicios</a></li>
-                          <li class="menu-item"><a href="catalogo.html" onclick="toggle">Catalogo</a>
-                            <div class="submenu" id="catalogoSubmenu">
-                              <section class="sub-menu-acordeon">
-                                <ul class="menu-list-ul">
-                                  <li class="menu-item"><a href="#grid" onclick="seleccionar()">Shows Clásicos</a></li>
-                                  <li class="menu-item" ><a href="catalogo.html">Shows Especiales</a></li>
-                                </ul>
-                              </section>
-                            </div>
-                          </li>
-                          <li class="menu-item"><a href="#galeria" onclick="seleccionar()">Quiénes Somos</a></li>
-                          <li class="menu-item"><a href="" onclick="seleccionar()">Contacto</a></li>
-                        </ul>
+                      <nav class="menu-list-nav menu-list-ul">
+                        
+                          <a href="#acerca" class="menu-item" onclick="seleccionar()">Servicios</a>
+                          <a href="catalogo.html" class="menu-item" onclick="toggleSubMenu()" >Catalogo</a>
+                          <a href="#galeria" class="menu-item" onclick="seleccionar()">Quiénes Somos</a>
+                          <a href="" class="menu-item" onclick="seleccionar()">Contacto</a>
+                        
                       </nav>
                     </div>
                     <div class="social-media-hidden">
@@ -112,18 +104,10 @@
               <img src="./Images/pruebas/2.png" alt="Servicio 2">
               <img src="./Images/pruebas/3.png" alt="Servicio 3">
               <img src="./Images/pruebas/4.png" alt="Servicio 4">
-          </div>
-          <div class="container2">
               <img src="./Images/pruebas/5.png" alt="Servicio 5">
               <img src="./Images/pruebas/6.png" alt="Servicio 6">
-              <img src="./Images/pruebas/7.png" alt="Servicio 7">
-              <img src="./Images/pruebas/8.png" alt="Servicio 8">
           </div>
-        </div>
-        <div class="circles">
-          <span class="circle active"></span>
-          <span class="circle"></span>  
-        </div>
+          
     </div>
     <section class="services-section">
       <h2 class="line-title">Nuestros Servicios</h2>
@@ -178,22 +162,22 @@
     <div class="triunfos">
       <div class="box">
         <img src="./Images/iconos/anillo-de-bodas-11.png" alt="Imagen 1">
-        <h1 class="counter">+1500</h1>
+        <h1 class="counter" id="counter">+1500</h1>
         <h6>Bodas realizadas </h6>
       </div>
       <div class="box">
         <img src="./Images/iconos/baile-21.png" alt="Imagen 2">
-        <h1 class="counter">+1000</h1>
+        <h1 class="counter" id="counter">+1000</h1>
         <h6>Coreografía para novios</h6>
       </div>
       <div class="box">
         <img src="./Images/iconos/mascara-de-carnaval-11.png" alt="Imagen 3">
-        <h1 class="counter">+600</h1>
+        <h1 class="counter" id="counter">+600</h1>
         <h6>Horas Locas</h6>
       </div>
       <div class="box">
         <img src="./Images/iconos/flamenco-1.png" alt="Imagen 1">
-        <h1 class="counter">+380</h1>
+        <h1 class="counter" id="counter">+380</h1>
         <h6>Danzas Folclóricas</h6>
       </div>
     </div>
@@ -249,36 +233,36 @@
       <li>
         <div class="item">
           <img src="./Images/pruebas/2.png"  alt="">
-          <h5>TÍTULO TESTIMONIO 6</h5>
-          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+          <h5>TESTIMONIO 6</h5>
+          <p>rem at deserunt.</p>
         </div>
       </li>
       <li>
         <div class="item">
           <img src="./Images/pruebas/2.png"  alt="">
-          <h5>TÍTULO TESTIMONIO 6</h5>
-          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+          <h5>TÍTULO </h5>
+          <p> quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
         </div>
       </li>
       <li>
         <div class="item">
           <img src="./Images/pruebas/2.png"  alt="">
-          <h5>TÍTULO TESTIMONIO 6</h5>
-          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+          <h5>TÍTULO </h5>
+          <p>amet est fugiat, cupiditate similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
         </div>
       </li>
       <li>
         <div class="item">
           <img src="./Images/pruebas/2.png"  alt="">
-          <h5>TÍTULO TESTIMONIO 6</h5>
-          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+          <h5>TÍTULO </h5>
+          <p>exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
         </div>
       </li>
       <li>
         <div class="item">
           <img src="./Images/pruebas/2.png" class="testimonio" alt="">
-          <h5>TÍTULO TESTIMONIO 6</h5>
-          <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facere amet est fugiat, cupiditate! Dicta quaerat ea similique voluptatem eos exercitationem expedita, quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
+          <h5>TÍTULO TESTI</h5>
+          <p> quod voluptatibus deleniti! Voluptatem rerum dolorem at deserunt.</p>
         </div>
       </li>
     </ul>
@@ -303,16 +287,18 @@
     </div>
   
     <div class = 'rightSide'>
-  
-      <div id = 'errorMessage'>
-        <p> That Username or Password is incorrect</p>
-      </div>
-  
-      <form id="register" action="#" class="inputGroup">
-        <input type="text" class="inputField" placeholder="User id" required>
+      <img src="./Images/logo-Imagina.png" alt="Imagen encima de leftSide" class="overlay-image">
 
-        <input type="email" class="inputField" placeholder="enter your email" required>
-        <input type="password" class="inputField" placeholder="Enter password" required>
+      
+      
+      <form id="register" action="#" class="inputGroup">
+        <h1>CONTACTO</h1>
+        <h6>DATOS PERSONALES</h6>
+        <input type="text" class="inputField" placeholder="Nombre" required>
+        <input type="text" class="inputField" placeholder="Apellidos" required>
+        <input type="text" class="inputField" placeholder="Celúlar" required>
+        <h6>FECHA DE EVENTO</h6>
+        <input type="date" name="nacimiento" id="fecha" >
         <input type="checkbox" class="chackbox"  required> <span>Estoy de acuerdo en mandar mis datos de contacto a Imagina Productora</span>
         <button type="submit" class="submitbtn"> 
             registrarme
@@ -321,6 +307,7 @@
     </div>
   </div>
   </div>
+
     <section class="gallery" id="portafolio">
         <div class="contenedor">
           <h2 class="subtitulo">Galería: Nuestros Eventos</h2>
@@ -376,12 +363,13 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 </body>
-
+<script src="./js/testimonio.js"></script>
 <script src="./js/carrusel.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/contacto.js"></script>
 <script src="./js/galeria.js"></script>
 <script src="./js/phone.js"></script>
-</html>
+</html> 

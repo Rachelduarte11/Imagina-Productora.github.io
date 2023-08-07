@@ -1,6 +1,4 @@
-html, body {
-    background-color: #ebebeb;
-  }
+
   h1 {
     font-family: sans-serif;
     color: #fdfdfd;
@@ -25,13 +23,17 @@ html, body {
   .bxslider li h5, .bxslider li p {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 0 0 0;
-    margin-top: 10px;
+   
     text-align: center; 
     width: 50%;
     margin: 0 auto;
   }
+  .bxslider li p {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
   #bx-pager {
-    margin: 10px auto;
+    margin: 20px auto 100px;
     text-align-last: center;
   }
   #bx-pager a {
@@ -48,10 +50,28 @@ html, body {
     background-color:purple; /* Cambia el color aquí para cuando esté activo (por ejemplo, #00F es azul) */
   }
   .bx-wrapper{
+    margin: 0!important;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
   border: none!important;
   background: #fff;
-  margin-bottom: 20px!important;
+  margin-bottom: 0px!important;
   padding: 20px!important;
   }
+  @media (max-width: 350px){
+    .bx-wrapper{
+      height: 500px!important;
+    }
+    .bxslider li h5 {
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+  }
+  #bx-pager {
+    margin: 20px auto 40px;
+    text-align-last: center;
+}
+.history-title {
+  margin: 60px 0 20px;
+  }
+}
