@@ -431,23 +431,3 @@ input[type="date"]:focus {
     width: 250px;
   }
   
-.mainloggin span {
-  color: #3F3C3C;
-  display: flex;
-  width: 85%;
-  float: right;
-  padding: 20px 0;
-  position: relative;
-    right: 10px;
-}
-.chackbox {
-  margin-right: 8px;
-  display: block;
-  float: left;
-  position: relative;
-}
-.inputGroup {
-  width: 220px;
-  transition: .5s;
-}
-  }
