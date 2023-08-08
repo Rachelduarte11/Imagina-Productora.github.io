@@ -296,9 +296,9 @@ input[type="date"]:focus {
     }
     
     .mainloggin {
-      display: flex;
+      display: block;
       flex-direction: column-reverse;
-      position: relative;
+   
       background-color: #ffff;
       padding: 20px;
       border-radius: 8px;
@@ -349,7 +349,8 @@ input[type="date"]:focus {
       color: #353535;
       filter: blur(0.5px);
       font-weight: 500;
-      font-size: 2rem;}
+      font-size: 2rem;
+    text-align: inherit;}
     
     .submitbtn {
       background-color: #4caf50;
@@ -362,11 +363,7 @@ input[type="date"]:focus {
     }
     
      .overlay-image {
-      position: absolute;
-      z-index: 2;
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin: 0 35px;
       width: 200px; 
       height: auto; 
       display: flex;
