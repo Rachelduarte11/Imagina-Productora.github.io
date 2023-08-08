@@ -9,10 +9,7 @@
   margin: 0px;
   padding: 0px;
 }
-body {
-  font-family:Arapey;
-  font-size: 16px;
-}
+
 .clear {
   clear: both;
 }
@@ -75,9 +72,7 @@ button {
 
 /******* Middle section CSS Start ******/
 /* -------- Landing page ------- */
-.services-section {
-  padding: 60px 50px;
-}
+
 .services-section .owl-stage {
   margin: 15px 0;
   display: flex;
@@ -146,7 +141,11 @@ button {
   position: relative;
   z-index: 5;
 }
-
+@media (min-width: 768px){
+.services-section{
+  display: none;
+}
+}
 
 @media (max-width: 767px) {
   body {
@@ -168,9 +167,7 @@ button {
  
 
   /* -------- Landing page ------- */
-  .services-section {
-    padding: 20px 15px 0px;
-  }
+ 
   .services-section .item {
     margin: 0 10px 40px;
     width: 200px;
