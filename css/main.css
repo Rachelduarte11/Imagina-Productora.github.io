@@ -1189,6 +1189,9 @@ padding: 20px!important;
       }
   }
   @media (max-width: 450px){
+    body{
+      overflow-x: hidden;
+    }
   .box h1 {
       font-size: 1.5rem;
       margin: 5px!important;
