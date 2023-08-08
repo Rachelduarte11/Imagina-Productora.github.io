@@ -571,7 +571,7 @@ padding: 20px!important;
     font-weight: 700;
     color:#323131;
     margin-bottom: 40px;
-    font-size: 40px;
+   
     margin-top: 0!important;
     font-family: Inika;
 }
@@ -1230,6 +1230,9 @@ padding: 20px!important;
 }
 .history-container .history-title{
   margin: 6rem 0 0 0!important;
+}
+.subtitulo{
+  font-size: 20px!important;
 }
 }
   @media (min-width: 1400px) {
